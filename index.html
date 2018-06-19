@@ -12,7 +12,7 @@
         </dialog>
 
 
-        <dialog id="d2">
+        <dialog class="a">
             <p>Dialog 2</p>
             <h1>
                 <h2>
@@ -23,8 +23,17 @@
             </h1>
         </dialog>
 
+
+        <dialog id="d3" class="a b c">
+                <p>Dialog 3</p>
+                <h1>
+                    teste 3
+                </h1>
+            </dialog>
+
         <button id="abre_d1">abre modal 1</button>
         <button id="abre_d2">abre modal 2</button>
+        <button id="abre_d3">abre modal 3</button>
 
 
         <script>
@@ -35,10 +44,16 @@
             });
 
 
-            let d2 = document.getElementById('d2');
+            let d2 = document.getElementsByClassName('d2');
             let btn2 = document.getElementById('abre_d2');
             btn2.addEventListener('click', () => {
                 d2.showModal();
+            });
+
+            let d3 = document.getElementById('d3');
+            let btn3 = document.getElementById('abre_d3');
+            btn3.addEventListener('click', () => {
+                d3.showModal();
             });
         </script>
 
