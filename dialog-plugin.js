@@ -4,8 +4,10 @@
         let dialogs = document.getElementsByTagName('dialog');
                 
         for (let x = 0; x < dialogs.length; x++) {            
-            var newElement = document.createElement('div');
+            let newElement = document.createElement('div');
+            let insideContent = dialogs[x].innerHTML;
             newElement.setAttribute('id', dialogs[x].id);
+            newElement.innerHTML += insideContent;
             newElement.style.cssText = 'position:none;z-index:999;top:50%;left:50%;transform:translate(-50%,-50%)';
             document.body.appendChild(newElement);            
         }
