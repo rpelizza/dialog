@@ -11,7 +11,7 @@
             if (elementClass) newElement.classList = elementClass.join(' ');
             if (elementID) newElement.setAttribute('id', dialogs[x].id);
             newElement.innerHTML += insideContent;
-            newElement.style.cssText = 'position:none;z-index:999;top:50%;left:50%;transform:translate(-50%,-50%)';
+            newElement.style.cssText = 'display:none;position:fixed;z-index:999;top:50%;left:50%;transform:translate(-50%,-50%)';
             document.body.appendChild(newElement);            
         }
 
