@@ -1,0 +1,25 @@
+{
+  "name": "html-dialog-corretion",
+  "version": "1.0.0",
+  "description": "Commit inicial",
+  "main": "dialog-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpelizza/dialog.git"
+  },
+  "author": "Rafael Pedro Pelizza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpelizza/dialog/issues"
+  },
+  "homepage": "https://github.com/rpelizza/dialog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.0.2",
+    "gulp-rename": "^1.3.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
