@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dialog Plugin</title>
+    </head>
+    <body>
+
+        <dialog id="d1">
+            dialog 01
+        </dialog>
+
+
+        <dialog id="d2">
+            dialog 02
+        </dialog>
+
+        <button id="abre_d1">abre modal 1</button>
+        <button id="abre_d2">abre modal 2</button>
+
+
+        <script>
+            let d1 = document.getElementById('d1');
+            let btn1 = document.getElementById('abre_d1');
+            btn1.addEventListener('click', () => {
+                d1.showModal();
+            });
+
+
+            let d2 = document.getElementById('d2');
+            let btn2 = document.getElementById('abre_d2');
+            btn2.addEventListener('click', () => {
+                d2.showModal();
+            });
+        </script>
+
+
+        <script src="dialog-plugin.js"></script>
+        
+    </body>
+</html>
